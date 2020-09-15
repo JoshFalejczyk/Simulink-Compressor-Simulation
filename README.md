@@ -1,2 +1,7 @@
 # Simulink-Compressor-Simulation
-A basic experiment on the behavior of compressor audio effects, simulated in Simulink
+
+This is a small project on compressors that served as an introduction to Simulink for me.  As a musician familiar with the compressor audio effect, I was previously aware of its usage and drawbacks on audio signals.  Using Simulink, I decided to create a basic experiment that tests one common compressor concept: as the effect is increased, the most prevalent harmonics in the audio signal will be made even further prevalent.  In other words, when it comes to frequency components, the predominant is made even more dominant.  To simulate this, three sinusoidal waves (125Hz, 1KHz, and 16KHz) were generated and combined into an audio signal.  They were then ran through a compressor effect provided by Simulink's Audio Toolbox package, where this signal, and an unaltered one for comparison, were plotted in real time.  As the compressor settings grew more extreme, as predicted, the most prevalent sinusoidal wave was amplified further.  To exclude external variables (like perhaps the compressor favoring a certain range of frequencies rather than the most dominant component), each sinusoidal wave had its amplitude made the most dominant, and the underlying concept remained true.  In short, this little experiment was nothing groundbreaking, but nonetheless a fun intro to Simulink and the systems modeling it offers.
+
+Credit: 
+1. I of course was not the first to discover this behavior within compressor audio effects, as it is more general knowledge.
+2. The actual simulation and model building, as well as further analysis, was done by myself.
